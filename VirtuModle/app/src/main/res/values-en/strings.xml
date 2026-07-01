@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">VirtuModel</string>
+    <string name="welcome_message">Welcome to VirtuModel, create\nand explore your virtual spaces with ease</string>
+    <string name="create_model">Create Model</string>
+    <string name="load_model">Load Model</string>
+    <string name="image_description">Virtual model illustration</string>
+    <string name="model_name">🏠 Model name:</string>
+    <string name="model_name_hint">Enter a name</string>
+    <string name="model_name_desc">Field to enter the model name</string>
+    <string name="empty_message">No room has been added yet.\nClick ➕ to start!</string>
+    <string name="add_room">➕ Add a new room</string>
+    <string name="cancel">❌ Cancel</string>
+    <string name="save">✅ Save</string>
+    <string name="photo_nord">North Photo</string>
+    <string name="photo_sud">South Photo</string>
+    <string name="photo_est">East Photo</string>
+    <string name="photo_ouest">West Photo</string>
+
+    <string name="view">👁️</string>
+    <string name="replace">🔄</string>
+    <string name="delete">🗑️</string>
+
+    <string name="add_access">➕ Add Access</string>
+    <string name="returnn">↩ Back</string>
+    <string name="validate">✅ Validate</string>
+    <string name="banner_text">Take a photo of each wall&#10;and shape your virtual world</string>
+    <string name="piece_name">Room name:</string>
+    <string name="boussole">Compass</string>
+    <string name="photo_preview">Photo preview</string>
+    <string name="access_added">Added access:</string>
+    <string name="finish">✅ Finish</string>
+    <string name="toggle_language">Français</string>
+
+</resources>

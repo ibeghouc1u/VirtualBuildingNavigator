@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <!-- Bandeau supérieur -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="VirtuModèle"
+        android:textColor="#FFFFFF"
+        android:background="#9C27B0"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Texte "Sélectionnez une pièce" -->
+    <TextView
+        android:id="@+id/tvSelectPiece"
+        android:text="👆 Sélectionnez une pièce:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Zone de sélection des pièces -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#6A1B9A"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp">
+
+        <!-- Les pièces seront ajoutées dynamiquement ici -->
+        <LinearLayout
+            android:id="@+id/containerPieces"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- Texte "Orientation initiale" -->
+    <TextView
+        android:id="@+id/tvOrientation"
+        android:text="👇 Orientation initiale:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Fond violet pour la sélection des directions -->
+
+    <!-- Espacement pour pousser les boutons vers le bas -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#6A1B9A"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Boutons radio pour l'orientation -->
+        <RadioGroup
+            android:id="@+id/rgOrientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbNord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="#9C27B0"
+                android:text="Nord"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbSud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="#9C27B0"
+                android:text="Sud"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbEst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="#9C27B0"
+                android:text="Est"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbOuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#9C27B0"
+                android:text="Ouest"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Boutons de navigation (fixés en bas) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Bouton Retour -->
+        <Button
+            android:id="@+id/btnRetour"
+            android:text="↩ Retour"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7B1FA2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_media_previous"
+            android:padding="8dp"
+            android:elevation="2dp" />
+
+        <!-- Espace entre les boutons -->
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+
+        <!-- Bouton Valider -->
+        <Button
+            android:id="@+id/btnValider"
+            android:text="✅ Valider"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:elevation="2dp" />
+    </LinearLayout>
+
+</LinearLayout>

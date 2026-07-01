@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/piece"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".PieceActivity">
+
+    <!-- Bannière d'information -->
+    <TextView
+        android:id="@+id/tvBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9146ff"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/banner_text"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Champ pour le nom de la pièce -->
+
+    <!-- Boussole -->
+
+    <!-- Sections des boutons -->
+    <TextView
+        android:id="@+id/tvPieceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/piece_name"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBanner" />
+
+    <!-- Boutons Retour et Valider -->
+
+    <EditText
+        android:id="@+id/etPieceName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/piece_name"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/tvPieceName"
+        app:layout_constraintTop_toTopOf="@id/tvPieceName" />
+
+    <ImageView
+        android:id="@+id/ivCompass"
+        android:layout_width="117dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/boussole"
+        android:scaleType="fitCenter"
+        android:src="@drawable/boussole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPieceName" />
+
+    <LinearLayout
+        android:id="@+id/photoSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCompass">
+
+        <!-- Répétition pour chaque direction -->
+        <!-- PHOTO NORD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5">
+
+                <!-- Bouton Photo (grand format) -->
+                <Button
+                    android:id="@+id/btnPhotoNord"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#9146ff"
+                    android:gravity="center"
+                    android:text="@string/photo_nord"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- Bouton Voir 👁️ (taille équivalente à l'emoji) -->
+
+
+
+                <!-- Bouton Supprimer 🗑️ -->
+                <Button
+                    android:id="@+id/btnViewNord"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="#000000"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:minWidth="32dp"
+                    android:minHeight="32dp"
+                    android:padding="0dp"
+                    android:text="@string/view"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnDeleteNord"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="#FF4444"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:minWidth="32dp"
+                    android:minHeight="32dp"
+                    android:padding="0dp"
+                    android:text="@string/delete"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Bouton Ajouter Accès -->
+            <Button
+                android:id="@+id/btnAddAccessNord"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#2A2A2A"
+                android:text="@string/add_access"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <!-- PHOTO SUD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:weightSum="3.5">
+
+                <!-- Bouton Photo (grand format) -->
+                <Button
+                    android:id="@+id/btnPhotoSud"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#9146ff"
+                    android:gravity="center"
+                    android:text="@string/photo_sud"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- Bouton Voir 👁️ (taille équivalente à l'emoji) -->
+                <Button
+                    android:id="@+id/btnViewSud"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:minWidth="32dp"
+                    android:minHeight="32dp"
+                    android:padding="0dp"
+                    android:text="@string/view"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:backgroundTint="#000000"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"/>
+
+
+
+                <!-- Bouton Supprimer 🗑️ -->
+                <Button
+                    android:id="@+id/btnDeleteSud"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:minWidth="32dp"
+                    android:minHeight="32dp"
+                    android:padding="0dp"
+                    android:text="@string/delete"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:backgroundTint="#FF4444"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- Bouton Ajouter Accès -->
+            <Button
+                android:id="@+id/btnAddAccessSud"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#2A2A2A"
+                android:text="@string/add_access"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <!-- Répétition pour PHOTO NORD, EST et OUEST -->
+
+
+        <!-- PHOTO EST -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5">
+
+                <!-- Bouton Photo (grand format) -->
+                <Button
+                    android:id="@+id/btnPhotoEst"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#9146ff"
+                    android:gravity="center"
+                    android:text="@string/photo_est"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- Bouton Voir 👁️ (taille équivalente à l'emoji) -->
+                <Button
+                    android:id="@+id/btnViewEst"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="#000000"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:minWidth="32dp"
+                    android:minHeight="32dp"
+                    android:padding="0dp"
+                    android:text="@string/view"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Bouton Remplacer 🔄 -->
+
+                <!-- Bouton Supprimer 🗑️ -->
+                <Button
+                    android:id="@+id/btnDeleteEst"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="#FF4444"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:minWidth="32dp"
+                    android:minHeight="32dp"
+                    android:padding="0dp"
+                    android:text="@string/delete"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Bouton Ajouter Accès -->
+            <Button
+                android:id="@+id/btnAddAccessEst"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#2A2A2A"
+                android:text="@string/add_access"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <!-- PHOTO OUEST -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5">
+
+                <!-- Bouton Photo (grand format) -->
+                <Button
+                    android:id="@+id/btnPhotoOuest"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#9146ff"
+                    android:gravity="center"
+                    android:text="@string/photo_ouest"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- Bouton Voir 👁️ (taille équivalente à l'emoji) -->
+
+                <!-- Bouton Remplacer 🔄 -->
+
+                <!-- Bouton Supprimer 🗑️ -->
+                <Button
+                    android:id="@+id/btnViewOuest"
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="#000000"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:minWidth="42dp"
+                    android:minHeight="32dp"
+                    android:padding="0dp"
+                    android:text="@string/view"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnDeleteOuest"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="#FF4444"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:minWidth="32dp"
+                    android:minHeight="32dp"
+                    android:padding="0dp"
+                    android:text="@string/delete"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Bouton Ajouter Accès -->
+            <Button
+                android:id="@+id/btnAddAccessOuest"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#2A2A2A"
+                android:text="@string/add_access"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRetour"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#9146ff"
+        android:padding="12dp"
+        android:text="@string/returnn"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/validate"
+        android:textColor="#00FF00"
+        android:backgroundTint="#9146ff"
+        android:textStyle="bold"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

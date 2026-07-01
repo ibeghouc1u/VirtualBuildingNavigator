@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">VirtuModèle</string>
+    <string name="welcome_message">Bienvenue sur VirtuModèle, créez\net explorez vos espaces virtuels en toute simplicité</string>
+    <string name="create_model">Créer un modèle</string>
+    <string name="load_model">Charger un modèle</string>
+    <string name="image_description">Illustration du modèle virtuel</string>
+    <string name="model_name">🏠 Nom du modèle:</string>
+    <string name="model_name_hint">Entrez un nom</string>
+    <string name="model_name_desc">Champ pour entrer le nom du modèle</string>
+    <string name="empty_message">Aucune pièce n’a encore été ajoutée.\nCliquez sur ➕ pour commencer !</string>
+    <string name="add_room">➕ Ajouter une nouvelle pièce</string>
+    <string name="cancel">❌ Annuler</string>
+    <string name="save">✅Sauvegarder</string>
+    <string name="photo_nord">Photo Nord</string>
+    <string name="photo_sud">Photo Sud</string>
+    <string name="photo_est">Photo Est</string>
+    <string name="photo_ouest">Photo Ouest</string>
+
+    <string name="view">👁️</string>
+    <string name="replace">🔄</string>
+    <string name="delete">🗑️</string>
+    <string name="toggle_language">English</string>
+
+
+
+    <string name="add_access">➕ Ajouter Accès</string>
+    <string name="returnn">↩ Retour</string>
+    <string name="validate">✅ Valider</string>
+    <string name="banner_text">Prends une photo de chaque mur&#10;et façonne ton monde virtuel</string>
+    <string name="piece_name">Nom de la pièce:</string>
+    <string name="boussole">Boussole</string>
+    <string name="photo_preview">Aperçu de la photo</string>
+    <string name="access_added">Accès ajoutés :</string>
+    <string name="finish">✅ Terminer</string>
+
+
+
+
+
+</resources>
