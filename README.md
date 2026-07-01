@@ -91,55 +91,9 @@ Instead of relying on complex 3D modeling techniques, the application uses direc
 
 ---
 
-## 🏛️ Project Architecture
 
-```text
-Project
-│
-├── Rooms
-│   ├── North Photo
-│   ├── South Photo
-│   ├── East Photo
-│   └── West Photo
-│
-├── Connections
-│   ├── Door
-│   └── Passage
-│
-└── JSON Storage
-```
 
----
 
-## 📂 Data Model Example
-
-```json
-{
-  "buildingName": "My House",
-  "rooms": [
-    {
-      "name": "Living Room",
-      "photos": {
-        "north": "north.jpg",
-        "south": "south.jpg",
-        "east": "east.jpg",
-        "west": "west.jpg"
-      },
-      "connections": [
-        {
-          "destination": "Kitchen",
-          "position": {
-            "x": 120,
-            "y": 250
-          }
-        }
-      ]
-    }
-  ]
-}
-```
-
----
 
 ## 🎯 Learning Objectives
 
@@ -153,34 +107,5 @@ This project was developed to explore:
 
 ---
 
-## 🚀 Future Enhancements
 
-- Panorama image support
-- 360° navigation
-- Multi-floor building support
-- Cloud synchronization
-- Floor plan generation
-- Augmented Reality (AR) integration
-- Improved user interface and user experience
 
----
-
-## 📸 Screenshots
-
-Screenshots will be added here.
-
-| Home Screen | Room Creation | Navigation |
-|------------|--------------|------------|
-| Coming Soon | Coming Soon | Coming Soon |
-
----
-
-## 👨‍💻 Author
-
-Developed as part of a Mobile Application Development project.
-
----
-
-## 📄 License
-
-This project is intended for educational and academic purposes.
